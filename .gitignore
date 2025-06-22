@@ -22,3 +22,27 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Rust build output (Tauri backend)
+/target/
+src-tauri/target/
+src-tauri/Cargo.lock
+
+# Build tools output (just in case)
+build/
+out/
+
+# Tauri's Dev Server config
+.tauri.conf.json
+
+# Environment files (secrets!)
+.env
+.env.*
+
+# npm / yarn / pnpm cache folders (can appear in some setups)
+.npm/
+.pnpm/
+.yarn/
+
+# Vite cache (if using Vite frontend)
+.vite/
